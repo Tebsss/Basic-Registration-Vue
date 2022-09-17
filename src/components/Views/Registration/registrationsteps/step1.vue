@@ -8,6 +8,7 @@
     <input
       :value="userDetails.password"
       @input="(event) => input('password', event.target.value)"
+      type="password"
       placeholder="Enter Your Passsword"
     />
     <button @click="next()">Next</button>

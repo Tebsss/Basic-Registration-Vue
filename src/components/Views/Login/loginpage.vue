@@ -1,7 +1,7 @@
 <template>
   <div>
     <input v-model="username" placeholder="Enter Your Email" />
-    <input v-model="password" placeholder="Enter Your Password" />
+    <input v-model="password" type="password" placeholder="Enter Your Password" />
     <button @click="login()">Login</button>
   </div>
 </template>
@@ -42,6 +42,9 @@ export default {
 
         if (!this.hasStep1 || !this.hasStep2 || !this.hasStep3 ) {
           this.$router.push("/register");
+        } else {
+            this.$router.push("/dashboard");
+
         }
 
       } catch (error) {

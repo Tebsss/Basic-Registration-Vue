@@ -21,7 +21,6 @@ export default {
     };
   },
   created() {
-    console.log("created", this.userDetails);
     this.firstname = this.userDetails.firstname;
     this.lastname = this.userDetails.lastname;
     this.address = this.userDetails.address;
